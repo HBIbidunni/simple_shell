@@ -30,6 +30,7 @@ The Collaboration on this ALX C- Simple Shell project was done by team of two pe
 * The simple shell `hsh` works by printing a prompt and waiting for a command line from the user. It then creates a child process in which the command is checked. Similarly,checks for built-ins, aliases in the PATH, and local executable programs are created. Afterwards, the child process is replaced by the command line, which accepts arguments. After the command is completed, the program returns to the parent process and prints the prompt, signaling that the program is ready to receive a new command. 
 
 * All the files are to be compiled on Ubuntu 20.04 LTS machine using: 
+
 `gcc -Wall -Werror -Wextra -pedantic * .c -o hsh`. 
 
 * Once compiled, to start the program in interactive shell mode, run: `$./hsh`. To exit the program, run: `hsh $ exit or Ctrl-D or enter "exit" (with or without a status)`.The `hsh` shell supports most shell commands, such as `cat`, `pwd`, `home`, and more.
@@ -40,31 +41,31 @@ To invoke `hsh`, compile all .c files in the repository and run the resulting ex
 
 For instance:
 
-`$ echo "echo 'hello'" | ./hsh
+`$ echo "echo 'hello'" | ./hsh`
 
-'hello'
+`'hello'`
 
-$`
+`$`
 
 If `hsh` is invoked with standard input connected to a terminal, an interactive shell is opened. When executing interactively,`hsh` displays the prompt `$`  when it is ready to read a command.
 
 For instance:
 
-`$./hsh
+`$./hsh`
 
-$`
+`$`
 
 Alternatively, if command line arguments are supplied upon invocation, `hsh` treats the first argument as a file from which to read commands. The supplied file should contain one command per line. `hsh` runs each of the commands contained in the file in order before exiting.
 
 For instance:
 
-`$ cat test 
+`$ cat test` 
 
-echo 'hello'
+`echo 'hello'`
 
-$ ./hsh test
+`$ ./hsh test`
 
-'hello'
+`'hello'`
 
-$`
+`$`
 
