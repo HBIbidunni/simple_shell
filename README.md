@@ -1,4 +1,4 @@
-## ALX C - Simple Shell Team Project
+# ALX C - Simple Shell Team Project
 The Collaboration on this ALX C- Simple Shell project was done by team of two people and we were required to create a simple shell that mimics the bash shell. Our simple shell shall be called `hsh`.
 
 ## Resources
@@ -19,7 +19,7 @@ The Collaboration on this ALX C- Simple Shell project was done by team of two pe
 * No more than 5 functions per file
 * All the header files in the project should be include guarded
 * Write a README with the description of your project
-* You should have an [AUTHORS](./AUTHORS) file at the root of your repository, listing all individuals having contributed content to the repository.  
+* The [AUTHORS](./AUTHORS) are at the root of this repository, listing all individuals that contributed to the content of this simple_shell repository.  
 
 ## Synopsis
 * In this project the `hsh` is simple implementation of a UNIX command line interpreter.
@@ -121,7 +121,7 @@ User hits `Ctrl+d` in the third line.
 `$ENV_VARIABLE`
 
 `$?`
-,`$$`
+, `$$`
 
 ## Comments
 `hsh` ignores all words and characters preceeded by a # character on a line.
@@ -141,21 +141,21 @@ For instance:
 
 || - OR logical operator
 
-# Builtin Commands
+## Builtin Commands
 
 > cd
 
-alias
+> alias
 
-exit
+> exit
 
-env
+> env
 
-setenv
+> setenv
 
-unsetenv
+> unsetenv
 
-We discovered and understand:
+We discovered and now understand:
 * How a shell works and finds commands
 * Creating, forking and working with processes
 * Executing a program from another program
