@@ -121,7 +121,6 @@ User hits `Ctrl+d` in the third line.
 `$ENV_VARIABLE`
 
 `$?`
-
 `$$`
 
 ## Comments
@@ -164,4 +163,4 @@ We discovered and understand:
 * Building a test suite to check our own code
 
 ## Prepared by
-* A_man_image HBIbidunni
+*HBIbidunni
