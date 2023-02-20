@@ -142,8 +142,9 @@ For instance:
 
 || - OR logical operator
 
-Builtin Commands
-cd
+# Builtin Commands
+
+-> cd
 
 alias
 
