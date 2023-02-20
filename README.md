@@ -77,7 +77,7 @@ For instance:
 `$`
 
 ## Environment
-Upon invocation, `hsh` receives and copies the environment of the parent process in which it was executed. This environment is an array of name-value strings describing variables in the formatNAME=VALUE. A few key environmental variables are:
+Upon invocation, `hsh` receives and copies the environment of the parent process in which it was executed. This environment is an array of name-value strings describing variables in the format `NAME=VALUE`. A few key environmental variables are:
 
 HOME
 
@@ -121,6 +121,7 @@ User hits `Ctrl+d` in the third line.
 `$ENV_VARIABLE`
 
 `$?`
+
 `$$`
 
 ## Comments
@@ -163,4 +164,5 @@ We discovered and understand:
 * Building a test suite to check our own code
 
 ## Prepared by
-*HBIbidunni
+* HBIbidunni
+----
