@@ -2,8 +2,8 @@
 The Collaboration on this ALX C- Simple Shell project was done by team of two people and we were required to create a simple shell that mimics the bash shell. Our simple shell shall be called `hsh`.
 
 ## Resources
-* [Unix shell](./Unix shell)
-* [Thompson shell](./Thompson shell)
+* Unix shell
+* Thompson shell
 
 ## The Project was completed utilizing
 * Betty linter
@@ -80,61 +80,79 @@ For instance:
 Upon invocation, `hsh` receives and copies the environment of the parent process in which it was executed. This environment is an array of name-value strings describing variables in the formatNAME=VALUE. A few key environmental variables are:
 
 HOME
+
 PWD
+
 OLDPWD
+
 PATH
 
 ## Command Execution
-After receiving a command, `hsh` tokenizes it into words using " " as a delimiter. The first word is considered the command and all remaining words are considered arguments to that command.`hsh` then proceeds with the following actions:
+After receiving a command, `hsh` tokenizes it into words using `" "` as a delimiter. The first word is considered the command and all remaining words are considered arguments to that command.
+`hsh` then proceeds with the following actions:
 
-* If the first character of the command is neither a slash (\) nor dot (.), the shell searches for it in the list of shell builtins. If there exists a builtin by that name, the builtin is invoked.
-* If the first character of the command is none of a slash (\), dot (.), nor builtin, hsh searches each element of the PATH environmental variable for a directory containing an executable file by that name.
-* If the first character of the command is a slash (\) or dot (.) or either of the above searches was successful, the shell executes the named program with any remaining given arguments in a separate execution environment.
+* If the first character of the command is neither a slash (`\`) nor dot (`.`), the shell searches for it in the list of shell builtins. If there exists a builtin by that name, the builtin is invoked.
+* If the first character of the command is none of a slash (`\`), dot (`.`), nor builtin, hsh searches each element of the PATH environmental variable for a directory containing an executable file by that name.
+* If the first character of the command is a slash (`\`) or dot (`.`) or either of the above searches was successful, the shell executes the named program with any remaining given arguments in a separate execution environment.
 
-##Exit Status
-`hsh` returns the exit status of the last command executed, with zero indicating success and non-zero indicating failure.
+## Exit Status
+* `hsh` returns the exit status of the last command executed, with zero indicating success and non-zero indicating failure.
 
-If a command is not found, the return status is 127; if a command is found but is not executable, the return status is 126.
+* If a command is not found, the return status is `127`; if a command is found but is not executable, the return status is `126`.
 
-All builtins return zero on success and one or two on incorrect usage (indicated by a corresponding error message).
+* All builtins return zero on success and one or two on incorrect usage (indicated by a corresponding error message).
 
 ## Signals
-While running in interactive mode, `hsh` ignores the keyboard input Ctrl+c. Alternatively, an input of end-of-file (Ctrl+d) will exit the program.
+While running in interactive mode, `hsh` ignores the keyboard input `Ctrl+c`. Alternatively, an input of end-of-file (`Ctrl+d`) will exit the program.
 
-User hits Ctrl+d in the third line.
+User hits `Ctrl+d` in the third line.
 
-$ ./hsh
-$ ^C
-$ ^C
-$
+`$ ./hsh`
+
+`$ ^C`
+
+`$ ^C`
+
+`$`
 
 ## Variable Replacement
 `hsh` interprets the $ character for variable replacement.
 
-$ENV_VARIABLE
-$?
-$$
+`$ENV_VARIABLE`
+
+`$?`
+
+`$$`
 
 ## Comments
 `hsh` ignores all words and characters preceeded by a # character on a line.
 
 For instance:
 
-$ echo 'hello' #this will be ignored!
-'hello'
+`$ echo 'hello' #this will be ignored!`
+
+`'hello'`
 
 ## Operators
 `hsh` specially interprets the following operator characters:
 
 ; - Command separator
+
 && - AND logical operator
+
 || - OR logical operator
+
 Builtin Commands
 cd
+
 alias
+
 exit
+
 env
+
 setenv
+
 unsetenv
 
 We discovered and understand:
@@ -146,4 +164,4 @@ We discovered and understand:
 * Building a test suite to check our own code
 
 ## Prepared by
-* HBIbidunni
+* A_man_image HBIbidunni
