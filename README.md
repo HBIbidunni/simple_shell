@@ -121,9 +121,7 @@ User hits `Ctrl+d` in the third line.
 `$ENV_VARIABLE`
 
 `$?`
-
-
-`$$`
+,`$$`
 
 ## Comments
 `hsh` ignores all words and characters preceeded by a # character on a line.
@@ -145,7 +143,7 @@ For instance:
 
 # Builtin Commands
 
--> cd
+> cd
 
 alias
 
